@@ -20,9 +20,13 @@
       width:100%;
       height:auto;
       display: block;
-      background-image:url('../images/bg.jpg');
+      background-image:url('../public/images/bg.jpg');
       background-position: center;
+      background-size: cover;
       background-repeat: no-repeat;
+    }
+    #top-bar img{
+      width:80%;
     }
     #menu-bar{
       display:grid;
@@ -116,6 +120,9 @@
       background-color: #5674bc;
     }
     @media only screen and (max-width:700px){
+      #main{
+        height: 80vh;
+      }
       #navbar{
         display:none;
       }
@@ -124,6 +131,8 @@
         width:100%;
       }
       #welcome{
+        position: absolute;
+        top: 30%;
         font-size: 20px;
       }
       #main-content{
@@ -147,7 +156,7 @@
     <div id="core">
       <div id='main'>
         <div id="menu-bar">
-          <section id="top-bar"><img width=100% src="../images/logo.png"/></section>
+          <section id="top-bar"><img src="../public/images/logo.png"/></section>
           <section id="navbar">
             <div class="nav-item">EVENTS</div>
             <div class="nav-item">ACHIEVERS</div>
@@ -158,7 +167,7 @@
             <div class="nav-item">BLOG</div>
           </section>
       </div>
-        <section id="welcome">Welcome To The Official Site of CSE Association, GCE Kannur</section>
+        <section id="welcome">Welcome To The Official Site of Chinmaya Vidyalaya Taliparamba</section>
         .
       </div>
       <section id="explore"><a href="#main-content"><button>EXPLORE</button></a></section>
